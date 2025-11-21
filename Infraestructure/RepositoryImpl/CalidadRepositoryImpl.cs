@@ -51,5 +51,19 @@ namespace api_calidad.Infraestructure.RepositoryImpl
 
             return lista;
         }
+        public async Task<List<JsonElement>> ListarEvaluacionesAsync(string json)
+        {
+            var lista = await EjecutarStoredProcedureAsync<JsonElement>(
+                "CALIDAD_recuperarEvaluaciones",
+                json,
+                result =>
+                {
+                    var jsonString = result.GetString(0);
+                    return JsonSerializer.Deserialize<JsonElement>(jsonString);
+                },
+                parametrosRequeridos: true);
+
+            return lista;
+        }
     }
 }

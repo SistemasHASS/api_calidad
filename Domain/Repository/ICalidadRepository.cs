@@ -7,5 +7,6 @@ namespace api_calidad.Domain.Repository
         Task<List<JsonElement>> ListarNotasAsync(string json);
         Task<List<JsonElement>> RegistrarNotaAsync(string json);
         Task<List<JsonElement>> ReporteSemanalAsync(string json);
+        Task<List<JsonElement>> ListarEvaluacionesAsync(string json);
     }
 }

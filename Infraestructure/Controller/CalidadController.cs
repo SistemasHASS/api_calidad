@@ -51,5 +51,17 @@ namespace api_calidad.Infraestructure.Controller
             var resultado = await this.calidadUseCase.ReporteSemanalAsync(json);
             return Ok(resultado.FirstOrDefault());
         }
+
+        [HttpPost("listar-evaluaciones")]
+        [ProducesResponseType(typeof(JsonElement), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status403Forbidden)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<ActionResult<dynamic>> ListarEvaluaciones([FromBody] JsonElement? body = null)
+        {
+            string json = body.HasValue && body.Value.ValueKind != JsonValueKind.Null ? body.Value.ToString() : "[]";
+            var resultado = await this.calidadUseCase.ListarEvaluacionesAsync(json);
+            return Ok(resultado.FirstOrDefault());
+        }
     }
 }

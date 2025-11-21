@@ -25,5 +25,10 @@ namespace api_calidad.Application.UseCaseImpl
         {
             return await this.calidadRepository.ReporteSemanalAsync(json);
         }
+
+        public async Task<List<JsonElement>> ListarEvaluacionesAsync(string json)
+        {
+            return await this.calidadRepository.ListarEvaluacionesAsync(json);
+        }
     }
 }
