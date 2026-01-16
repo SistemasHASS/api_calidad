@@ -1,7 +1,28 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\proyectos\\apps\\app_calidad\\api_calidad\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\cesar.sanchez\\Documents\\DEV\\api_calidad\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AD0F2B2A-7BE7-43D4-9AF4-CA90B478B689}|api_calidad.csproj|c:\\users\\cesar.sanchez\\documents\\dev\\api_calidad\\application\\usecaseimpl\\calidadusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD0F2B2A-7BE7-43D4-9AF4-CA90B478B689}|api_calidad.csproj|solutionrelative:application\\usecaseimpl\\calidadusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD0F2B2A-7BE7-43D4-9AF4-CA90B478B689}|api_calidad.csproj|c:\\users\\cesar.sanchez\\documents\\dev\\api_calidad\\infraestructure\\repositoryimpl\\calidadrepositoryimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD0F2B2A-7BE7-43D4-9AF4-CA90B478B689}|api_calidad.csproj|solutionrelative:infraestructure\\repositoryimpl\\calidadrepositoryimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD0F2B2A-7BE7-43D4-9AF4-CA90B478B689}|api_calidad.csproj|c:\\users\\cesar.sanchez\\documents\\dev\\api_calidad\\domain\\usecase\\icalidadusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD0F2B2A-7BE7-43D4-9AF4-CA90B478B689}|api_calidad.csproj|solutionrelative:domain\\usecase\\icalidadusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD0F2B2A-7BE7-43D4-9AF4-CA90B478B689}|api_calidad.csproj|c:\\users\\cesar.sanchez\\documents\\dev\\api_calidad\\domain\\repository\\icalidadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD0F2B2A-7BE7-43D4-9AF4-CA90B478B689}|api_calidad.csproj|solutionrelative:domain\\repository\\icalidadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD0F2B2A-7BE7-43D4-9AF4-CA90B478B689}|api_calidad.csproj|c:\\users\\cesar.sanchez\\documents\\dev\\api_calidad\\infraestructure\\controller\\calidadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD0F2B2A-7BE7-43D4-9AF4-CA90B478B689}|api_calidad.csproj|solutionrelative:infraestructure\\controller\\calidadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +30,80 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CalidadRepositoryImpl.cs",
+              "DocumentMoniker": "C:\\Users\\cesar.sanchez\\Documents\\DEV\\api_calidad\\Infraestructure\\RepositoryImpl\\CalidadRepositoryImpl.cs",
+              "RelativeDocumentMoniker": "Infraestructure\\RepositoryImpl\\CalidadRepositoryImpl.cs",
+              "ToolTip": "C:\\Users\\cesar.sanchez\\Documents\\DEV\\api_calidad\\Infraestructure\\RepositoryImpl\\CalidadRepositoryImpl.cs",
+              "RelativeToolTip": "Infraestructure\\RepositoryImpl\\CalidadRepositoryImpl.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAADwv0YAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T23:14:36.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ICalidadUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\cesar.sanchez\\Documents\\DEV\\api_calidad\\Domain\\UseCase\\ICalidadUseCase.cs",
+              "RelativeDocumentMoniker": "Domain\\UseCase\\ICalidadUseCase.cs",
+              "ToolTip": "C:\\Users\\cesar.sanchez\\Documents\\DEV\\api_calidad\\Domain\\UseCase\\ICalidadUseCase.cs",
+              "RelativeToolTip": "Domain\\UseCase\\ICalidadUseCase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T14:01:28.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ICalidadRepository.cs",
+              "DocumentMoniker": "C:\\Users\\cesar.sanchez\\Documents\\DEV\\api_calidad\\Domain\\Repository\\ICalidadRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Repository\\ICalidadRepository.cs",
+              "ToolTip": "C:\\Users\\cesar.sanchez\\Documents\\DEV\\api_calidad\\Domain\\Repository\\ICalidadRepository.cs",
+              "RelativeToolTip": "Domain\\Repository\\ICalidadRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T14:01:50.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CalidadController.cs",
+              "DocumentMoniker": "C:\\Users\\cesar.sanchez\\Documents\\DEV\\api_calidad\\Infraestructure\\Controller\\CalidadController.cs",
+              "RelativeDocumentMoniker": "Infraestructure\\Controller\\CalidadController.cs",
+              "ToolTip": "C:\\Users\\cesar.sanchez\\Documents\\DEV\\api_calidad\\Infraestructure\\Controller\\CalidadController.cs",
+              "RelativeToolTip": "Infraestructure\\Controller\\CalidadController.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAUwEoAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T13:49:44.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CalidadUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\cesar.sanchez\\Documents\\DEV\\api_calidad\\Application\\UseCaseImpl\\CalidadUseCase.cs",
+              "RelativeDocumentMoniker": "Application\\UseCaseImpl\\CalidadUseCase.cs",
+              "ToolTip": "C:\\Users\\cesar.sanchez\\Documents\\DEV\\api_calidad\\Application\\UseCaseImpl\\CalidadUseCase.cs",
+              "RelativeToolTip": "Application\\UseCaseImpl\\CalidadUseCase.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwCEAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T13:49:28.006Z",
+              "EditorCaption": ""
             }
           ]
         }

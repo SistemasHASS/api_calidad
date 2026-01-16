@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("api_calidad")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+297045b16841f2c7a8e620a0479ccb1c78149ba0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2012d3e5217eb82e4429712edc6225a3825b8394")]
 [assembly: System.Reflection.AssemblyProductAttribute("api_calidad")]
 [assembly: System.Reflection.AssemblyTitleAttribute("api_calidad")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
