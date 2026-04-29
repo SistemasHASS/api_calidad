@@ -78,5 +78,31 @@ namespace api_calidad.Infraestructure.RepositoryImpl
                 parametrosRequeridos: true);
             return lista;
         }
+        public async Task<List<JsonElement>> ListarDefectosAsync(string json)
+        {
+            var lista = await EjecutarStoredProcedureAsync<JsonElement>(
+                "CALIDAD_listardefectos",
+                json,
+                result =>
+                {
+                    var jsonString = result.GetString(0);
+                    return JsonSerializer.Deserialize<JsonElement>(jsonString);
+                },
+                parametrosRequeridos: true);
+            return lista;
+        }
+        public async Task<List<JsonElement>> SincronizarDefectosAsync(string json)
+        {
+            var lista = await EjecutarStoredProcedureAsync<JsonElement>(
+                "CALIDAD_sincronizarevaluaciondefectos",
+                json,
+                result =>
+                {
+                    var jsonString = result.GetString(0);
+                    return JsonSerializer.Deserialize<JsonElement>(jsonString);
+                },
+                parametrosRequeridos: true);
+            return lista;
+        }
     }
 }

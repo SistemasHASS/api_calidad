@@ -3267,23 +3267,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\cesar.sanchez\\.nuget\\packages\\": {},
+    "C:\\Users\\practicante03.ti\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cesar.sanchez\\Documents\\DEV\\api_calidad\\api_calidad.csproj",
+      "projectUniqueName": "C:\\Users\\practicante03.ti\\Desktop\\Calidad\\api_calidad\\api_calidad.csproj",
       "projectName": "api_calidad",
-      "projectPath": "C:\\Users\\cesar.sanchez\\Documents\\DEV\\api_calidad\\api_calidad.csproj",
-      "packagesPath": "C:\\Users\\cesar.sanchez\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cesar.sanchez\\Documents\\DEV\\api_calidad\\obj\\",
+      "projectPath": "C:\\Users\\practicante03.ti\\Desktop\\Calidad\\api_calidad\\api_calidad.csproj",
+      "packagesPath": "C:\\Users\\practicante03.ti\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\practicante03.ti\\Desktop\\Calidad\\api_calidad\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\cesar.sanchez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\practicante03.ti\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3296,6 +3296,7 @@
       },
       "frameworks": {
         "net8.0": {
+          "framework": "net8.0",
           "targetAlias": "net8.0",
           "projectReferences": {}
         }
@@ -3310,10 +3311,11 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "10.0.200"
     },
     "frameworks": {
       "net8.0": {
+        "framework": "net8.0",
         "targetAlias": "net8.0",
         "dependencies": {
           "Microsoft.AspNetCore.OpenApi": {
@@ -3348,7 +3350,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -75,5 +75,29 @@ namespace api_calidad.Infraestructure.Controller
             var resultado = await this.calidadUseCase.ReporteDetalladoAsync(json);
             return Ok(resultado.FirstOrDefault());
         }
+
+        [HttpPost("listar-defectos")]
+        [ProducesResponseType(typeof(JsonElement), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status403Forbidden)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<ActionResult<dynamic>> ListarDefectos([FromBody] JsonElement? body = null)
+        {
+            string json = body.HasValue && body.Value.ValueKind != JsonValueKind.Null ? body.Value.ToString() : "[]";
+            var resultado = await this.calidadUseCase.ListarDefectosAsync(json);
+            return Ok(resultado.FirstOrDefault());
+        }
+
+        [HttpPost("sincronizar-defectos")]
+        [ProducesResponseType(typeof(JsonElement), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status403Forbidden)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<ActionResult<dynamic>> SincronizarDefectos([FromBody] JsonElement? body = null)
+        {
+            string json = body.HasValue && body.Value.ValueKind != JsonValueKind.Null ? body.Value.ToString() : "[]";
+            var resultado = await this.calidadUseCase.SincronizarDefectosAsync(json);
+            return Ok(resultado.FirstOrDefault());
+        }
     }
 }
