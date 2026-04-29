@@ -33,5 +33,20 @@ namespace api_calidad.Application.UseCaseImpl
         {
             return await this.calidadRepository.ReporteDetalladoAsync(json);
         }
+
+        public async Task<List<JsonElement>> SincronizarDefectosAsync(string json)
+        {
+            return await this.calidadRepository.SincronizarDefectosAsync(json);
+        }
+
+        public async Task<List<JsonElement>> ReporteDefectosAsync(string json)
+        {
+            return await this.calidadRepository.ReporteDefectosAsync(json);
+        }
+
+        public async Task<List<JsonElement>> ReporteBarrasDefectosAsync(string json)
+        {
+            return await this.calidadRepository.ReporteBarrasDefectosAsync(json);
+        }
     }
 }

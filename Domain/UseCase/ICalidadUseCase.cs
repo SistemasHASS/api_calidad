@@ -9,5 +9,8 @@ namespace api_calidad.Domain.UseCase
         Task<List<JsonElement>> ReporteSemanalAsync(string json);
         Task<List<JsonElement>> ListarEvaluacionesAsync(string json);
         Task<List<JsonElement>> ReporteDetalladoAsync(string json);
+        Task<List<JsonElement>> SincronizarDefectosAsync(string json);
+        Task<List<JsonElement>> ReporteDefectosAsync(string json);
+        Task<List<JsonElement>> ReporteBarrasDefectosAsync(string json);
     }
 }
