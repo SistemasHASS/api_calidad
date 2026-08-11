@@ -1,4 +1,4 @@
-﻿using api_calidad.Domain.UseCase;
+using api_calidad.Domain.UseCase;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Json;
@@ -97,6 +97,18 @@ namespace api_calidad.Infraestructure.Controller
         {
             string json = body.HasValue && body.Value.ValueKind != JsonValueKind.Null ? body.Value.ToString() : "[]";
             var resultado = await this.calidadUseCase.SincronizarDefectosAsync(json);
+            return Ok(resultado.FirstOrDefault());
+        }
+
+        [HttpPost("sincronizar-evaluacion-campo")]
+        [ProducesResponseType(typeof(JsonElement), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status403Forbidden)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<ActionResult<dynamic>> SincronizarEvaluacionCampo([FromBody] JsonElement? body = null)
+        {
+            string json = body.HasValue && body.Value.ValueKind != JsonValueKind.Null ? body.Value.ToString() : "[]";
+            var resultado = await this.calidadUseCase.SincronizarEvaluacionCampoAsync(json);
             return Ok(resultado.FirstOrDefault());
         }
     }

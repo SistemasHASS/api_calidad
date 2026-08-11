@@ -1,4 +1,4 @@
-﻿using System.Text.Json;
+using System.Text.Json;
 
 namespace api_calidad.Domain.UseCase
 {
@@ -11,5 +11,6 @@ namespace api_calidad.Domain.UseCase
         Task<List<JsonElement>> ReporteDetalladoAsync(string json);
         Task<List<JsonElement>> ListarDefectosAsync(string json);
         Task<List<JsonElement>> SincronizarDefectosAsync(string json);
+        Task<List<JsonElement>> SincronizarEvaluacionCampoAsync(string json);
     }
 }
