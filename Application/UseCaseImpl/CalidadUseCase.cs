@@ -1,4 +1,4 @@
-﻿using api_calidad.Domain.Repository;
+using api_calidad.Domain.Repository;
 using api_calidad.Domain.UseCase;
 using System.Text.Json;
 
@@ -25,10 +25,25 @@ namespace api_calidad.Application.UseCaseImpl
         {
             return await this.calidadRepository.ReporteSemanalAsync(json);
         }
-
         public async Task<List<JsonElement>> ListarEvaluacionesAsync(string json)
         {
             return await this.calidadRepository.ListarEvaluacionesAsync(json);
+        }
+        public async Task<List<JsonElement>> ReporteDetalladoAsync(string json)
+        {
+            return await this.calidadRepository.ReporteDetalladoAsync(json);
+        }
+        public async Task<List<JsonElement>> ListarDefectosAsync(string json)
+        {
+            return await this.calidadRepository.ListarDefectosAsync(json);
+        }
+        public async Task<List<JsonElement>> SincronizarDefectosAsync(string json)
+        {
+            return await this.calidadRepository.SincronizarDefectosAsync(json);
+        }
+        public async Task<List<JsonElement>> SincronizarEvaluacionCampoAsync(string json)
+        {
+            return await this.calidadRepository.SincronizarEvaluacionCampoAsync(json);
         }
     }
 }

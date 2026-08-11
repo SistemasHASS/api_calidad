@@ -1,4 +1,4 @@
-﻿using System.Text.Json;
+using System.Text.Json;
 
 namespace api_calidad.Domain.Repository
 {
@@ -8,5 +8,9 @@ namespace api_calidad.Domain.Repository
         Task<List<JsonElement>> RegistrarNotaAsync(string json);
         Task<List<JsonElement>> ReporteSemanalAsync(string json);
         Task<List<JsonElement>> ListarEvaluacionesAsync(string json);
+        Task<List<JsonElement>> ReporteDetalladoAsync(string json);
+        Task<List<JsonElement>> ListarDefectosAsync(string json);
+        Task<List<JsonElement>> SincronizarDefectosAsync(string json);
+        Task<List<JsonElement>> SincronizarEvaluacionCampoAsync(string json);
     }
 }
