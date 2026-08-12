@@ -111,5 +111,17 @@ namespace api_calidad.Infraestructure.Controller
             var resultado = await this.calidadUseCase.SincronizarEvaluacionCampoAsync(json);
             return Ok(resultado.FirstOrDefault());
         }
+
+        [HttpPost("sincronizar-evaluacion-planta")]
+        [ProducesResponseType(typeof(JsonElement), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status403Forbidden)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<ActionResult<dynamic>> SincronizarEvaluacionPlanta([FromBody] JsonElement? body = null)
+        {
+            string json = body.HasValue && body.Value.ValueKind != JsonValueKind.Null ? body.Value.ToString() : "[]";
+            var resultado = await this.calidadUseCase.SincronizarEvaluacionAcopioAsync(json);
+            return Ok(resultado.FirstOrDefault());
+        }
     }
 }

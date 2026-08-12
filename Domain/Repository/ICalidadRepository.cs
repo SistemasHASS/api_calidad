@@ -12,5 +12,6 @@ namespace api_calidad.Domain.Repository
         Task<List<JsonElement>> ListarDefectosAsync(string json);
         Task<List<JsonElement>> SincronizarDefectosAsync(string json);
         Task<List<JsonElement>> SincronizarEvaluacionCampoAsync(string json);
+        Task<List<JsonElement>> SincronizarEvaluacionAcopioAsync(string json);
     }
 }
