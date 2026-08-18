@@ -45,5 +45,24 @@ namespace api_calidad.Application.UseCaseImpl
         {
             return await this.calidadRepository.SincronizarEvaluacionCampoAsync(json);
         }
+        public async Task<List<JsonElement>> SincronizarEvaluacionAcopioAsync(string json)
+        {
+            return await this.calidadRepository.SincronizarEvaluacionAcopioAsync(json);
+        }
+
+        public async Task<List<JsonElement>> ReporteCampoCicalAsync(string json)
+        {
+            return await this.calidadRepository.ReporteCampoCicalAsync(json);
+        }
+
+        public async Task<List<JsonElement>> ReportePlantaCicalAsync(string json)
+        {
+            return await this.calidadRepository.ReportePlantaCicalAsync(json);
+        }
+
+        public async Task<List<JsonElement>> ReporteFactoresCicalAsync(string json)
+        {
+            return await this.calidadRepository.ReporteFactoresCicalAsync(json);
+        }
     }
 }

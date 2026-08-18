@@ -111,5 +111,53 @@ namespace api_calidad.Infraestructure.Controller
             var resultado = await this.calidadUseCase.SincronizarEvaluacionCampoAsync(json);
             return Ok(resultado.FirstOrDefault());
         }
+
+        [HttpPost("sincronizar-evaluacion-planta")]
+        [ProducesResponseType(typeof(JsonElement), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status403Forbidden)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<ActionResult<dynamic>> SincronizarEvaluacionPlanta([FromBody] JsonElement? body = null)
+        {
+            string json = body.HasValue && body.Value.ValueKind != JsonValueKind.Null ? body.Value.ToString() : "[]";
+            var resultado = await this.calidadUseCase.SincronizarEvaluacionAcopioAsync(json);
+            return Ok(resultado.FirstOrDefault());
+        }
+
+        [HttpPost("reporte-campo-cical")]
+        [ProducesResponseType(typeof(JsonElement), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status403Forbidden)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<ActionResult<dynamic>> ReporteCampoCical([FromBody] JsonElement? body = null)
+        {
+            string json = body.HasValue && body.Value.ValueKind != JsonValueKind.Null ? body.Value.ToString() : "[]";
+            var resultado = await this.calidadUseCase.ReporteCampoCicalAsync(json);
+            return Ok(resultado.FirstOrDefault());
+        }
+
+        [HttpPost("reporte-planta-cical")]
+        [ProducesResponseType(typeof(JsonElement), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status403Forbidden)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<ActionResult<dynamic>> ReportePlantaCical([FromBody] JsonElement? body = null)
+        {
+            string json = body.HasValue && body.Value.ValueKind != JsonValueKind.Null ? body.Value.ToString() : "[]";
+            var resultado = await this.calidadUseCase.ReportePlantaCicalAsync(json);
+            return Ok(resultado.FirstOrDefault());
+        }
+
+        [HttpPost("reporte-factores-cical")]
+        [ProducesResponseType(typeof(JsonElement), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status403Forbidden)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<ActionResult<dynamic>> ReporteFactoresCical([FromBody] JsonElement? body = null)
+        {
+            string json = body.HasValue && body.Value.ValueKind != JsonValueKind.Null ? body.Value.ToString() : "[]";
+            var resultado = await this.calidadUseCase.ReporteFactoresCicalAsync(json);
+            return Ok(resultado.FirstOrDefault());
+        }
     }
 }

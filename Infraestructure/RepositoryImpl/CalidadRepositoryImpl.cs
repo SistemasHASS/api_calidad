@@ -117,5 +117,60 @@ namespace api_calidad.Infraestructure.RepositoryImpl
                 parametrosRequeridos: true);
             return lista;
         }
+        public async Task<List<JsonElement>> SincronizarEvaluacionAcopioAsync(string json)
+        {
+            var lista = await EjecutarStoredProcedureAsync<JsonElement>(
+                "CALIDAD_sincronizarevaluacionacopio",
+                json,
+                result =>
+                {
+                    var jsonString = result.GetString(0);
+                    return JsonSerializer.Deserialize<JsonElement>(jsonString);
+                },
+                parametrosRequeridos: true);
+            return lista;
+        }
+
+        public async Task<List<JsonElement>> ReporteCampoCicalAsync(string json)
+        {
+            var lista = await EjecutarStoredProcedureAsync<JsonElement>(
+                "CALIDAD_reporte_campo",
+                json,
+                result =>
+                {
+                    var jsonString = result.GetString(0);
+                    return JsonSerializer.Deserialize<JsonElement>(jsonString);
+                },
+                parametrosRequeridos: true);
+            return lista;
+        }
+
+        public async Task<List<JsonElement>> ReportePlantaCicalAsync(string json)
+        {
+            var lista = await EjecutarStoredProcedureAsync<JsonElement>(
+                "CALIDAD_reporte_planta",
+                json,
+                result =>
+                {
+                    var jsonString = result.GetString(0);
+                    return JsonSerializer.Deserialize<JsonElement>(jsonString);
+                },
+                parametrosRequeridos: true);
+            return lista;
+        }
+
+        public async Task<List<JsonElement>> ReporteFactoresCicalAsync(string json)
+        {
+            var lista = await EjecutarStoredProcedureAsync<JsonElement>(
+                "CALIDAD_reporte_factores",
+                json,
+                result =>
+                {
+                    var jsonString = result.GetString(0);
+                    return JsonSerializer.Deserialize<JsonElement>(jsonString);
+                },
+                parametrosRequeridos: true);
+            return lista;
+        }
     }
 }
